@@ -40,7 +40,7 @@ export default function Contact() {
 
           <ul>
             <li>✔ Trusted Online Coaching</li>
-            <li>✔ Classes 1 to 6 (Concept Based Learning)</li>
+            <li>✔ Classes 6 to 10 (Concept Based Learning)</li>
             <li>✔ Experienced & Dedicated Faculty</li>
             <li>✔ Personalized Guidance</li>
           </ul>

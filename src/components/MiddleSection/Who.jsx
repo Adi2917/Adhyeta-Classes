@@ -13,7 +13,7 @@ export default function Who() {
 
           <p>
             Adhyeta Classes is a dedicated online learning platform focused on
-            building strong academic foundations for students from Class 1 to 6.
+            building strong academic foundations for students from Class 6 to 10.
           </p>
 
           <p>
@@ -35,7 +35,7 @@ export default function Who() {
           <div className="who-card">
             <h3>Founded By</h3>
             <p className="highlight">
-              Miss. Pallavi • Mr. Aditya • Mr. Rishu
+              Miss. Pallavi • Mr. Aditya
             </p>
             <p>
               A team of passionate educators committed to delivering quality
