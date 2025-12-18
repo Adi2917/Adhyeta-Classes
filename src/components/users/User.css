@@ -1,0 +1,78 @@
+/* ===== Section ===== */
+.user-section {
+    width: 100%;
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    padding: 80px 20px;
+  }
+  
+  .user-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  
+  /* ===== Card ===== */
+  .user-card {
+    background: #ffffff;
+    padding: 36px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  }
+  
+  .user-card .icon {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 12px;
+  }
+  
+  .user-card h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin: 8px 0;
+  }
+  
+  .user-card p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #475569;
+  }
+  
+  /* Highlight Card */
+  .user-card.highlight {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+  }
+  
+  .user-card.highlight .icon,
+  .user-card.highlight h3,
+  .user-card.highlight p {
+    color: #ffffff;
+  }
+  
+  /* ===== Tablet ===== */
+  @media (max-width: 1024px) {
+    .user-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* ===== Mobile ===== */
+  @media (max-width: 576px) {
+    .user-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .user-card h3 {
+      font-size: 32px;
+    }
+  }
+  
