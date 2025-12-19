@@ -17,7 +17,7 @@ const Features = () => {
       <div className="features-top">
         <h2>Our Key Features</h2>
         <p>
-          Adhyeta Classes is specially designed for students from Class 1 to 6,
+          Adhyeta Classes is specially designed for students from Class 6 to 10,
           where learning is not only about marks but about building strong
           fundamentals, discipline and confidence for the future.
         </p>
