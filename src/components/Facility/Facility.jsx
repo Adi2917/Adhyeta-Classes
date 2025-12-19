@@ -16,7 +16,7 @@ const Facility = () => {
       <h2 className="facility-title">Our Facilities</h2>
       <p className="facility-subtitle">
         Adhyeta Classes provides a structured, supportive and result-oriented
-        learning environment for students of Class 1 to 6.
+        learning environment for students of Class 6 to 10.
       </p>
 
       {/* TOP SECTION */}

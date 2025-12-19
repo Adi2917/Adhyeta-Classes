@@ -15,7 +15,7 @@ export default function Extra() {
 
     if (response.ok) {
       alert("Thanks for submit 😊\nPlease wait for call and message");
-      form.reset();
+      window.location.reload(); // 🔥 clean reset
     } else {
       alert("Something went wrong. Please try again.");
     }
@@ -29,7 +29,8 @@ export default function Extra() {
         <div className="extra-info">
           <h2>Extra Curriculum Programs</h2>
           <p>
-            Different types of professional program for Class 11th, <br /> Class 12th aur Competitive exams.
+            Different types of professional program for Class 11th, <br />
+            Class 12th aur Competitive exams.
           </p>
 
           <div className="program-list">
@@ -64,15 +65,21 @@ export default function Extra() {
               />
             </div>
 
+            {/* ✅ PERFECT MOBILE VALIDATION */}
             <div className="form-group">
               <label>Mobile Number *</label>
               <input
-                type="tel"
+                type="text"
                 name="mobile"
                 placeholder="10 digit mobile number"
-                pattern="[0-9]{10}"
-                maxLength="10"
                 required
+                maxLength="10"
+                inputMode="numeric"
+                pattern="[0-9]{10}"
+                onChange={(e) => {
+                  e.target.value = e.target.value.replace(/\D/g, "");
+                }}
+                title="Enter valid 10 digit mobile number"
               />
             </div>
 

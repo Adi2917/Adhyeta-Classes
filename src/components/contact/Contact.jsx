@@ -1,6 +1,8 @@
 import "./Contact.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -11,16 +13,14 @@ export default function Contact() {
     await fetch("https://formspree.io/f/mldqqyre", {
       method: "POST",
       body: data,
-      headers: {
-        Accept: "application/json",
-      },
+      headers: { Accept: "application/json" },
     });
 
     alert(
       "Thanks for contacting Adhyeta Classes 😊\nPlease wait for call and message."
     );
 
-    window.location.reload(); // 🔥 refresh after alert
+    window.location.reload();
   };
 
   return (
@@ -32,18 +32,27 @@ export default function Contact() {
           <h2>
             Contact <span>Adhyeta Classes</span>
           </h2>
+
           <p>
-            Have any questions regarding admission, classes or courses?
-            We’re here to help you. Just fill out the form and our team will
-            contact you shortly.
+            Admissions are now open for <b>Class 6 to 10</b>.  
+            Get expert online coaching with concept-based learning
+            and personalized guidance.
           </p>
 
           <ul>
             <li>✔ Trusted Online Coaching</li>
-            <li>✔ Classes 6 to 10 (Concept Based Learning)</li>
-            <li>✔ Experienced & Dedicated Faculty</li>
-            <li>✔ Personalized Guidance</li>
+            <li>✔ Classes 6 to 10 (CBSE / ICSE)</li>
+            <li>✔ Experienced Faculty</li>
+            <li>✔ Doubt Solving & Mentorship</li>
           </ul>
+
+          {/* 🔥 Admission CTA */}
+          <div className="admission-box">
+            <h3>For Admission</h3>
+            <button onClick={() => navigate("/admission")}>
+              Click Here
+            </button>
+          </div>
         </div>
 
         {/* Right Form */}
@@ -58,13 +67,19 @@ export default function Contact() {
               required
             />
 
+            {/* ✅ PERFECT MOBILE VALIDATION */}
             <input
-              type="tel"
+              type="text"
               name="phone"
               placeholder="Mobile Number"
-              pattern="[0-9]{10}"
-              maxLength="10"
               required
+              maxLength="10"
+              inputMode="numeric"
+              pattern="[0-9]{10}"
+              onChange={(e) => {
+                e.target.value = e.target.value.replace(/\D/g, "");
+              }}
+              title="Enter valid 10 digit mobile number"
             />
 
             <input

@@ -14,8 +14,8 @@ const Home = () => {
         <Hero />
         <Who />
         <Why />
-        <User/>
         <Contact />
+        <User/>
         <Footer />
     </div>
   )

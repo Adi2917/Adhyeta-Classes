@@ -20,36 +20,30 @@ export default function Hero() {
     });
 
     alert("Form successfully submitted ✅\nPlease wait for call and message.");
-
-    window.location.reload(); // 🔥 page refresh after alert
+    window.location.reload();
   };
 
   return (
     <>
       <section className="hero">
         <div className="hero-container">
-          {/* Left */}
           <div className="hero-text">
             <h1>
               Empowering Your <span>Success</span>
             </h1>
-
             <p>
               Online Coaching for <br />
               <span>(Class 6 to 10)</span>
             </p>
-
             <button onClick={() => setOpenForm(true)}>Join Now</button>
           </div>
 
-          {/* Right */}
           <div className="hero-image">
             <img src={heroImg} alt="Student Studying" />
           </div>
         </div>
       </section>
 
-      {/* Form Modal */}
       {openForm && (
         <div className="modal">
           <div className="overlay" onClick={() => setOpenForm(false)}></div>
@@ -63,6 +57,7 @@ export default function Hero() {
 
             <form onSubmit={handleSubmit}>
               <input type="text" name="name" placeholder="Full Name" required />
+
               <input
                 type="text"
                 name="father"
@@ -70,13 +65,19 @@ export default function Hero() {
                 required
               />
 
+              {/* ✅ PERFECT MOBILE VALIDATION */}
               <input
-                type="tel"
+                type="text"
                 name="mobile"
                 placeholder="Mobile Number"
-                pattern="[0-9]{10}"
-                maxLength="10"
                 required
+                maxLength="10"
+                inputMode="numeric"
+                pattern="[0-9]{10}"
+                onChange={(e) => {
+                  e.target.value = e.target.value.replace(/\D/g, "");
+                }}
+                title="Enter valid 10 digit mobile number"
               />
 
               <select name="class" required>
