@@ -19,6 +19,7 @@ h2 {
 p {
   font-size: 14px;
   color: #555;
+  line-height: 1.6;
 }
 
 /* ===================== FEE SECTION ===================== */
@@ -42,11 +43,16 @@ p {
   margin-bottom: 10px;
 }
 
+/* table wrapper for mobile */
+.fee-left {
+  overflow-x: auto;
+}
+
 .fee-left table {
   width: 100%;
+  min-width: 520px; /* 🔥 mobile horizontal scroll */
   border-collapse: collapse;
   margin-top: 15px;
-  overflow: hidden;
   border-radius: 12px;
 }
 
@@ -59,6 +65,7 @@ p {
   padding: 14px;
   font-size: 14px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .fee-left td {
@@ -66,6 +73,7 @@ p {
   text-align: center;
   font-size: 14px;
   border-bottom: 1px solid #eee;
+  white-space: nowrap;
 }
 
 .fee-left tbody tr:hover {
@@ -125,11 +133,14 @@ p {
   justify-content: center;
   align-items: center;
   z-index: 999;
+  padding: 15px; /* 🔥 safe on mobile */
 }
 
 .box {
-  width: 95%;
+  width: 100%;
   max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto; /* 🔥 keyboard safe */
   background: #ffffff;
   border-radius: 20px;
   padding: 25px;
@@ -143,9 +154,9 @@ p {
 }
 
 .close {
-  position: absolute;
-  right: 18px;
-  top: 12px;
+  position: sticky;
+  top: 0;
+  float: right;
   font-size: 22px;
   cursor: pointer;
   color: #555;
@@ -204,7 +215,6 @@ textarea {
   display: flex;
   gap: 8px;
   align-items: flex-start;
-  cursor: pointer;
 }
 
 /* ---------- BUTTONS ---------- */
@@ -220,21 +230,16 @@ form button {
   transition: .3s;
 }
 
-form button:hover {
-  transform: translateY(-1px);
-}
-
-form button.disabled,
 form button:disabled {
   background: #a5a5a5;
   cursor: not-allowed;
-  box-shadow: none;
 }
 
 /* ===================== PAYMENT ===================== */
 .qr {
-  width: 220px;
-  margin: 10px auto;
+  width: 100%;
+  max-width: 220px;
+  margin: 12px auto;
   display: block;
 }
 
@@ -251,18 +256,8 @@ form button:disabled {
   margin-top: 10px;
 }
 
-.actions button:first-child {
-  background: #6c757d;
-}
-
-.actions button:last-child {
-  background: linear-gradient(135deg, #198754, #146c43);
-}
-
-.ok {
-  text-align: center;
-  color: green;
-  font-weight: bold;
+.actions button {
+  flex: 1;
 }
 
 /* ===================== RESPONSIVE ===================== */
@@ -273,7 +268,26 @@ form button:disabled {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .fee-right,
+  .fee-left {
+    padding: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
   .grid {
     grid-template-columns: 1fr;
   }
