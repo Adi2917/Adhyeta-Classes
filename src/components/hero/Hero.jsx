@@ -14,9 +14,7 @@ export default function Hero() {
     await fetch("https://formspree.io/f/mrbnndgp", {
       method: "POST",
       body: data,
-      headers: {
-        Accept: "application/json",
-      },
+      headers: { Accept: "application/json" },
     });
 
     alert("Form successfully submitted ✅\nPlease wait for call and message.");
@@ -27,23 +25,28 @@ export default function Hero() {
     <>
       <section className="hero">
         <div className="hero-container">
+          {/* LEFT */}
           <div className="hero-text">
             <h1>
               Empowering Your <span>Success</span>
             </h1>
+
             <p>
               Online Coaching for <br />
-              <span>(Class 6 to 10)</span>
+              <span>Class 6 to 10</span>
             </p>
+
             <button onClick={() => setOpenForm(true)}>Join Now</button>
           </div>
 
+          {/* RIGHT */}
           <div className="hero-image">
             <img src={heroImg} alt="Student Studying" />
           </div>
         </div>
       </section>
 
+      {/* MODAL */}
       {openForm && (
         <div className="modal">
           <div className="overlay" onClick={() => setOpenForm(false)}></div>
@@ -65,19 +68,17 @@ export default function Hero() {
                 required
               />
 
-              {/* ✅ PERFECT MOBILE VALIDATION */}
               <input
                 type="text"
                 name="mobile"
-                placeholder="Mobile Number"
+                placeholder="10 Digit Mobile Number"
                 required
                 maxLength="10"
                 inputMode="numeric"
                 pattern="[0-9]{10}"
-                onChange={(e) => {
-                  e.target.value = e.target.value.replace(/\D/g, "");
-                }}
-                title="Enter valid 10 digit mobile number"
+                onChange={(e) =>
+                  (e.target.value = e.target.value.replace(/\D/g, ""))
+                }
               />
 
               <select name="class" required>
@@ -89,11 +90,7 @@ export default function Hero() {
                 <option>Class 10</option>
               </select>
 
-              <textarea
-                name="address"
-                placeholder="Address"
-                required
-              ></textarea>
+              <textarea name="address" placeholder="Address" required />
 
               <button type="submit">Submit</button>
             </form>

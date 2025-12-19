@@ -30,13 +30,13 @@ export default function Footer() {
             </p>
 
             <div className="socials">
-              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+              <a href="#" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+              <a href="#" aria-label="Facebook">
                 <FaFacebookF />
               </a>
-              <a href="https://wa.me/917485875137" target="_blank" rel="noreferrer">
+              <a href="#" aria-label="Whatsapp">
                 <FaWhatsapp />
               </a>
             </div>
@@ -76,7 +76,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Adhyeta Classes
+        © {new Date().getFullYear()} Adhyeta Classes. All rights reserved.
       </div>
     </footer>
   );

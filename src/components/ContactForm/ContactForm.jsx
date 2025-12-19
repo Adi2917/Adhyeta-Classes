@@ -1,7 +1,7 @@
 import "./Contact.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Contact() {
+export default function ContactForm() {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {

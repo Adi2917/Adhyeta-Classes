@@ -5,7 +5,7 @@ import Hero from '../components/hero/Hero'
 import Who from '../components/MiddleSection/Who'
 import Why from '../components/MiddleSection/Why'
 import User from '../components/users/User'
-import Contact from '../components/contact/Contact'
+import ContactForm from '../components/ContactForm/ContactForm'
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
         <Hero />
         <Who />
         <Why />
-        <Contact />
+        <ContactForm />
         <User/>
         <Footer />
     </div>
