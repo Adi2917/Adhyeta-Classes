@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import "./Navbar.css";
+import logoImg from "../../assets/logo.jpeg"; // apna logo yahan rakho
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,15 +11,17 @@ export default function Navbar() {
     <header className="navbar">
       <div className="nav-container">
 
-        {/* Logo */}
-        <Link to="/" className="logo">
-          <div className="logo-circle">A</div>
+        {/* ===== Logo ===== */}
+        <div className="logo">
+          <div className="logo-circle">
+            <img src={logoImg} alt="Adhyeta Classes Logo" />
+          </div>
           <span className="logo-text">
             Adhyeta <span>Classes</span>
           </span>
-        </Link>
+        </div>
 
-        {/* Desktop Menu */}
+        {/* ===== Desktop Menu ===== */}
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/class">Class</Link></li>
@@ -26,7 +29,7 @@ export default function Navbar() {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
-        {/* Call & WhatsApp */}
+        {/* ===== Call & WhatsApp ===== */}
         <div className="nav-contact">
           <a href="tel:7485875137" className="call-btn">
             <FaPhoneAlt />
@@ -43,7 +46,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Hamburger */}
+        {/* ===== Hamburger ===== */}
         <div
           className={menuOpen ? "hamburger active" : "hamburger"}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -54,14 +57,13 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* ===== Mobile Menu ===== */}
       <div className={menuOpen ? "mobile-menu show" : "mobile-menu"}>
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link to="/class" onClick={() => setMenuOpen(false)}>Class</Link>
         <Link to="/admission" onClick={() => setMenuOpen(false)}>Admission</Link>
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
 
-        {/* Mobile Call / WhatsApp */}
         <div className="mobile-contact">
           <a href="tel:7485875137">
             <FaPhoneAlt /> 7485875137

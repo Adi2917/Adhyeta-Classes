@@ -1,0 +1,155 @@
+/* ===== SECTION ===== */
+.india-section {
+  background: linear-gradient(135deg, #f8fbff, #eef4ff);
+  padding: 100px 16px;
+}
+
+.india-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== HEADING ===== */
+.india-heading {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.india-top {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #2563eb;
+  margin-bottom: 14px;
+}
+
+.india-main {
+  font-size: 52px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.india-main span {
+  color: #1e40af;
+}
+
+.india-sub {
+  margin-top: 14px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.india-heading p {
+  max-width: 760px;
+  margin: 22px auto 0;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #475569;
+}
+
+/* ===== PLUS LAYOUT ===== */
+.india-plus {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding: 40px 20px;
+}
+
+/* center lines */
+.india-plus::before,
+.india-plus::after {
+  content: "";
+  position: absolute;
+  background: #c7d2fe;
+}
+
+.india-plus::before {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.india-plus::after {
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* ===== BOX ===== */
+.india-box {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.india-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.india-box p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .india-main {
+    font-size: 44px;
+  }
+
+  .india-sub {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .india-section {
+    padding: 70px 14px;
+  }
+
+  .india-top {
+    font-size: 15px;
+  }
+
+  .india-main {
+    font-size: 30px;
+  }
+
+  .india-sub {
+    font-size: 16px;
+  }
+
+  .india-heading p {
+    font-size: 14.5px;
+  }
+
+  /* remove plus layout */
+  .india-plus {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .india-plus::before,
+  .india-plus::after {
+    display: none;
+  }
+
+  .india-box h3 {
+    font-size: 18px;
+  }
+
+  .india-box p {
+    font-size: 14px;
+  }
+}

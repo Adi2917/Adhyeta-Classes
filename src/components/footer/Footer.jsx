@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import logoImg from '../../assets/logo.jpeg'// 👈 apna logo yahan rakho
 
 export default function Footer() {
   return (
@@ -15,10 +16,12 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-grid">
 
-          {/* Brand */}
+          {/* ===== Brand ===== */}
           <div className="footer-brand">
             <div className="brand-header">
-              <div className="logo-box">A</div>
+              <div className="logo-box">
+                <img src={logoImg} alt="Adhyeta Classes Logo" />
+              </div>
               <h2>
                 Adhyeta <span>Classes</span>
               </h2>
@@ -42,7 +45,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Links */}
+          {/* ===== Links ===== */}
           <div className="footer-section">
             <h3>Quick Links</h3>
             <ul>
@@ -53,7 +56,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* ===== Contact ===== */}
           <div className="footer-section">
             <h3>Contact</h3>
             <p><FaMapMarkerAlt /> Purnia, Bihar</p>

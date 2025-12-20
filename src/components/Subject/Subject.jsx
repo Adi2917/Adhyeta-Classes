@@ -36,11 +36,7 @@ export default function Subject() {
       icon: <FaLanguage />,
       desc: "Focus on reading, writing, grammar and spoken English development.",
     },
-    {
-      name: "Computer",
-      icon: <FaLaptopCode />,
-      desc: "Basic computer concepts, practical knowledge and digital skills.",
-    },
+    
   ];
 
   return (
