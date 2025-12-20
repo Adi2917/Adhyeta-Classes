@@ -18,8 +18,8 @@
 .india-top {
   display: inline-block;
   font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
   color: #2563eb;
   margin-bottom: 14px;
 }
@@ -49,7 +49,7 @@
   color: #475569;
 }
 
-/* ===== PLUS LAYOUT ===== */
+/* ===== PLUS LAYOUT (DESKTOP) ===== */
 .india-plus {
   position: relative;
   display: grid;
@@ -58,7 +58,7 @@
   padding: 40px 20px;
 }
 
-/* center lines */
+/* center plus lines */
 .india-plus::before,
 .india-plus::after {
   content: "";
@@ -84,7 +84,7 @@
 
 /* ===== BOX ===== */
 .india-box {
-  padding: 10px 20px;
+  padding: 10px 25px;
   text-align: center;
 }
 
@@ -112,7 +112,9 @@
   }
 }
 
+/* ===== MOBILE VIEW ===== */
 @media (max-width: 640px) {
+
   .india-section {
     padding: 70px 14px;
   }
@@ -133,15 +135,38 @@
     font-size: 14.5px;
   }
 
-  /* remove plus layout */
+  /* stack layout */
   .india-plus {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 0;
     padding: 0;
   }
 
+  /* remove plus lines */
   .india-plus::before,
   .india-plus::after {
+    display: none;
+  }
+
+  /* box + divider line */
+  .india-box {
+    padding: 28px 10px;
+    position: relative;
+  }
+
+  .india-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 1.5px;
+    background: #dbeafe;
+    transform: translateX(-50%);
+  }
+
+  /* last item no line */
+  .india-box:last-child::after {
     display: none;
   }
 

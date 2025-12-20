@@ -60,7 +60,6 @@ export default function India() {
           </div>
 
         </div>
-
       </div>
     </section>
   );
