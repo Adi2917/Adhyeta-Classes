@@ -33,13 +33,13 @@ export default function Footer() {
             </p>
 
             <div className="socials">
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.instagram.com/adhyeta_classes?igsh=MTNmdHdyM2o1ZmllZg==" aria-label="Instagram" target="blank">
                 <FaInstagram />
               </a>
-              <a href="#" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61585383008364" aria-label="Facebook" target="blank">
                 <FaFacebookF />
               </a>
-              <a href="#" aria-label="Whatsapp">
+              <a href="https://wa.me/message/LRFB7EDW2IB3E1" aria-label="Whatsapp" target="blank">
                 <FaWhatsapp />
               </a>
             </div>
