@@ -59,8 +59,8 @@ export default function Footer() {
           {/* ===== Contact ===== */}
           <div className="footer-section">
             <h3>Contact</h3>
-            <p><FaMapMarkerAlt /> Purnia, Bihar</p>
-            <p className="muted">India – 854301</p>
+            <p><FaMapMarkerAlt />Bihar</p>
+            <p className="muted">India</p>
 
             <p>
               <FaPhoneAlt />
