@@ -123,11 +123,11 @@ export default function FeeAdd() {
               </tr>
             </thead>
             <tbody>
-              <tr><td>6</td><td>₹1200</td><td>₹4500</td><td>₹6500</td><td>₹13000</td></tr>
-              <tr><td>7</td><td>₹1200</td><td>₹4500</td><td>₹6500</td><td>₹13000</td></tr>
-              <tr><td>8</td><td>₹1200</td><td>₹4500</td><td>₹6500</td><td>₹13000</td></tr>
-              <tr><td>9</td><td>₹1400</td><td>₹5300</td><td>₹7700</td><td>₹15400</td></tr>
-              <tr><td>10</td><td>₹1400</td><td>₹5300</td><td>₹7700</td><td>₹15400</td></tr>
+              <tr><td>6</td><td>₹999</td><td>₹2499</td><td>₹4499</td><td>₹7999</td></tr>
+              <tr><td>7</td><td>₹999</td><td>₹2499</td><td>₹4499</td><td>₹7999</td></tr>
+              <tr><td>8</td><td>₹999</td><td>₹2499</td><td>₹4499</td><td>₹7999</td></tr>
+              <tr><td>9</td><td>₹1100</td><td>₹2599</td><td>₹4599</td><td>₹8099</td></tr>
+              <tr><td>10</td><td>₹1100</td><td>₹2599</td><td>₹4599</td><td>₹8099</td></tr>
             </tbody>
           </table>
         </div>
