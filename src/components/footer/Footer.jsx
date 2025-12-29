@@ -64,7 +64,7 @@ export default function Footer() {
 
             <p>
               <FaPhoneAlt />
-              <a href="tel:7485875137"> +91 7485875137</a>
+              <a href="tel:9297753276"> +91 9297753276</a>
             </p>
 
             <p>
