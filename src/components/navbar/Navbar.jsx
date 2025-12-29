@@ -31,13 +31,13 @@ export default function Navbar() {
 
         {/* ===== Call & WhatsApp ===== */}
         <div className="nav-contact">
-          <a href="tel:7485875137" className="call-btn">
+          <a href="tel:9297753276" className="call-btn">
             <FaPhoneAlt />
-            <span>7485875137</span>
+            <span>9297753276</span>
           </a>
 
           <a
-            href="https://wa.me/917485875137"
+            href="https://wa.me/qr/GKE45JDSL5JNC1"
             target="_blank"
             rel="noreferrer"
             className="wp-btn"
