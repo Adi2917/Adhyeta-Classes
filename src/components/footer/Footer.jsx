@@ -39,7 +39,7 @@ export default function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61585383008364" aria-label="Facebook" target="blank">
                 <FaFacebookF />
               </a>
-              <a href="https://wa.me/qr/GKE45JDSL5JNC1" aria-label="Whatsapp" target="blank">
+              <a href="https://wa.me/919297753276" aria-label="Whatsapp" target="blank">
                 <FaWhatsapp />
               </a>
             </div>

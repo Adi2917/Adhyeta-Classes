@@ -25,21 +25,21 @@ export default function ContactOption() {
           </a>
 
           {/* WHATSAPP */}
-          <a href="https://wa.me/qr/GKE45JDSL5JNC1" className="option-card whatsapp">
+          <a href="https://wa.me/919297753276" className="option-card whatsapp" target="blank">
             <FaWhatsapp className="icon" />
             <h4>WhatsApp</h4>
             <span>Chat With Our Team</span>
           </a>
 
           {/* INSTAGRAM */}
-          <a href="https://www.instagram.com/adhyeta_classes?igsh=MTNmdHdyM2o1ZmllZg==" className="option-card instagram">
+          <a href="https://www.instagram.com/adhyeta_classes?igsh=MTNmdHdyM2o1ZmllZg==" className="option-card instagram" target="blank">
             <FaInstagram className="icon" />
             <h4>Instagram</h4>
             <span>Follow & Message Us</span>
           </a>
 
           {/* FACEBOOK */}
-          <a href="https://www.facebook.com/profile.php?id=61585383008364" className="option-card facebook">
+          <a href="https://www.facebook.com/profile.php?id=61585383008364" className="option-card facebook" target="blank">
             <FaFacebookF className="icon" />
             <h4>Facebook</h4>
             <span>Stay Connected</span>

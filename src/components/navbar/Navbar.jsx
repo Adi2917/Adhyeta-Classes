@@ -37,7 +37,7 @@ export default function Navbar() {
           </a>
 
           <a
-            href="https://wa.me/qr/GKE45JDSL5JNC1"
+            href="https://wa.me/919297753276"
             target="_blank"
             rel="noreferrer"
             className="wp-btn"
