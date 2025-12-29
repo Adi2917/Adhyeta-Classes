@@ -65,11 +65,11 @@ export default function Navbar() {
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
 
         <div className="mobile-contact">
-          <a href="tel:7485875137">
-            <FaPhoneAlt /> 7485875137
+          <a href="tel:9297753276">
+            <FaPhoneAlt /> 9297753276
           </a>
           <a
-            href="https://wa.me/917485875137"
+            href="https://wa.me/919297753276"
             target="_blank"
             rel="noreferrer"
           >
