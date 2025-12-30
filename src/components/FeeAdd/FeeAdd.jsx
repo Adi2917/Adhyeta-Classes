@@ -107,7 +107,7 @@ export default function FeeAdd() {
         </div>
 
         <div className="fee-right">
-          <h2>Admission Open – 2025</h2>
+          <h2>Admission Open – 2026</h2>
           <p>Limited Seats • Personal Attention • Expert Teachers</p>
           <button onClick={() => setOpen(true)}>Apply Now →</button>
         </div>
